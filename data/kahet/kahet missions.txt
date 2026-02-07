@@ -14,6 +14,7 @@
 mission "Graveyard Label"
 	landing
 	invisible
+	non-blocking
 	source
 		attributes ka'het
 	on offer
@@ -137,6 +138,7 @@ mission "First Contact: Ka'het: Remnant 1B"
 mission "graveyard insights compatibility"
 	landing
 	invisible
+	non-blocking
 	to offer
 		has "First Contact: Ka'het: Remnant 1B: offered"
 	on offer
@@ -170,9 +172,12 @@ event "graveyard insights"
 		add description `	Soon after the beginning the invasion, an attack on some sort of advanced nuclear facility started a meltdown; the fallout quickly spread across most of the planet, leaving all Builder settlements uninhabitable.`
 
 mission "Ringworld Debris"
-	landing
 	invisible
-	on enter "Queri"
+	entering
+	source
+		system "Queri"
+	destination "Earth"
+	on offer
 		set "ringworld debris"
 		conversation
 			`When you enter this suspiciously empty system, your attention is drawn to your ship's scanners. The proximity detection system is going off, suggesting that something sizable is close to your ship, although whatever it is you can't see it as you look out your cockpit.`
@@ -180,9 +185,7 @@ mission "Ringworld Debris"
 			scene "scene/ringworld debris"
 			`	In one particular corner you see that there is a small, barely recognizable tube, badly damaged but with a few intact wires creeping out. After tinkering a bit with the wires, you manage to connect the debris to your ship's secondary power systems. It barely uses any energy at all, but you can feel the air around it starting to get slightly colder.`
 			`	You unplug it and store the debris in a separate part of your ship. Maybe some alien species could tell you about it, if you were to bring it to them.`
-		fail
-	to complete
-		never
+				decline
 
 mission "Ringworld Debris: Remnant"
 	minor
@@ -615,7 +618,7 @@ mission "Ka'het: Another Death in the Graveyard 1A"
 		clear "ka'het: vareti"
 		payment 100000
 		dialog
-			`You meet up with the Remnant technician at the indicated coordinates and drop the cargo you have gathered one by one. After you're done, he thanks you with a short bow and quickly disappears behind a hangar door.`
+			`You meet up with the Remnant technician at the indicated coordinates and drop the cargo you have gathered one by one. After you're done, he thanks you with a short bow, hands you <payment> for your help, and quickly disappears behind a hangar door.`
 	on visit
 		dialog `You have reached <planet>, but the Ka'het machinery is on anoth.`
 	on fail
@@ -881,6 +884,7 @@ mission "Ka'het: Another Death in the Graveyard 1B"
 
 mission "Ka'het: Patir Reveal"
 	invisible
+	non-blocking
 	landing
 	to offer
 		has "Remnant: Cognizance 19: done"
@@ -1649,6 +1653,7 @@ mission "Ka'het: Patir Mystery 8B"
 
 mission "Asteroid guarding Lathia"
 	invisible
+	non-blocking
 	landing
 	to offer
 		has "Ka'het: Patir Mystery 8B: offered"
@@ -2338,6 +2343,7 @@ event "Patir spaceport returns and Fetri spawn"
 mission "Ka'het: Patir Mystery 12.2C"
 	landing
 	invisible
+	non-blocking
 	source "Builder Settlement"
 	to offer
 		has "Ka'het: Patir Mystery 12.2A: done"
@@ -2642,6 +2648,7 @@ ship "Builder Satellite" "Builder Satellite 2"
 mission "Ka'het: Voice From The Past 0"
 	landing
 	invisible
+	non-blocking
 	to offer
 		has "event: patir mystery timer"
 	to complete
