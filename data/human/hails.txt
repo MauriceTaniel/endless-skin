@@ -61,6 +61,8 @@ phrase "ship bribe rejection"
 		"I can't stand chatty enemies!"
 		"Do you think I understand that?"
 		"I can't do math in the middle of a fight!"
+		"Stop talking to me!"
+		"Shut up already!"
 
 phrase "ship bribe rejection"
 	word
@@ -4855,6 +4857,11 @@ phrase "ship bribe acceptance pirate"
 		"Can I keep blowing up your ships? Alright, nevermind."
 		"Glad I got what's due to me."
 		"Another step towards anarchy!"
+		"I win!"
+		"Thanks! Now scram!"
+		"I'll take good care of your credits!"
+		"One step closer to getting out of debt!"
+		"If only my law-abiding relatives could see me now!"
 
 phrase "friendly pirate"
 	word
@@ -4862,6 +4869,7 @@ phrase "friendly pirate"
 		"We are"
 		"You're looking at"
 		"You're in the presence of"
+		"You're basking in the presence of"
 	word
 		" the "
 	word
@@ -4872,11 +4880,14 @@ phrase "friendly pirate"
 		"scariest"
 		"nastiest"
 		"gnarliest"
+		"toughest"
 		"most savage"
+		"most powerful"
 		"most dangerous"
 		"most vicious"
 		"most ferocious"
 		"most dreaded"
+		"most feared"
 	word
 		" "
 	word
@@ -4952,6 +4963,7 @@ phrase "friendly pirate"
 		"wealth"
 		"plunder"
 		"the booty"
+		"riches"
 	word
 		": I love the pirate's life!"
 		": that's the way to live!"
@@ -4999,16 +5011,23 @@ phrase "friendly pirate"
 		"who you look at"
 		"who you hail"
 		"who you target"
+		"who you scan"
+		"who you pick fights with"
+		"who you say no to"
 		"your back"
 		"your cargo"
 		"your ship"
 		"your fleet"
+		"yourself"
 	word
 		" "
 	word
+		"here"
 		"around here"
 		"around these parts"
+		"in these parts"
 		"around this system"
+		"in this system"
 		"around us"
 		"around me"
 	word
@@ -5026,9 +5045,12 @@ phrase "friendly pirate"
 		"new "
 		"crazy "
 		"amazing "
+		"terrific "
 		"fantastic "
 		"incredible "
 		"fascinating "
+		"outstanding "
+		"spectacular "
 		""
 	phrase
 		"drugs"
@@ -5047,6 +5069,8 @@ phrase "friendly pirate"
 		" I wish I could afford more."
 		" I'm going to need to make money to buy more!"
 		" Best experience I've ever had!"
+		" I got some for sale!"
+		" I felt like I could lift a whole spaceship!"
 	replace
 		"%" ""
 
@@ -5061,9 +5085,13 @@ phrase "friendly pirate"
 	word
 		"new "
 		"terrible "
+		"horrible "
 		"horrendous "
 		"atrocious "
+		"absolutely atrocious"
+		"garbage "
 		"horrid "
+		"ungodly "
 		""
 	word
 		"bad blue"
@@ -5095,16 +5123,27 @@ phrase "friendly pirate"
 	word
 		""
 		" I couldn't see for a week"
+		" I saw stars for a week"
+		" I was sick for a week"
+		" I only heard ringing for a week"
 		" I couldn't get out of bed for a week"
 		" It felt like I was being eaten alive"
 		" It felt like I had insects crawling under my skin"
 		" I'm never taking that stuff again"
 		" Worst experience I've ever had"
+		" I thought I saw death itself"
+		" I felt like I was being chased"
+		" I felt like my face was on fire"
+		" I felt like I got shot"
+		" I only remember seeing this shadowy man in a hat.%"
+		" My friend was never the same after using it.%"
 	word
 		"!"
 		"."
 	replace
 		"?." "?"
+		".%!" "."
+		".%." "."
 
 phrase "friendly pirate"
 	word
@@ -5174,13 +5213,16 @@ phrase "friendly pirate"
 		" I suggest "
 		" try "
 	word
-		"using a stick to beat them into submission"
-		"throwing them out the airlock"
-		"starving them until they listen"
-		"threatening to throw them out the airlock"
-		"threatening to kill them"
-		"threatening to shoot them"
-		"using them as bait when you're boarding an enemy ship"
+		"using a stick to beat them into submission" 5
+		"throwing them out the airlock" 5
+		"starving them until they listen" 5
+		"threatening to throw them out the airlock" 5
+		"threatening to kill them" 5
+		"threatening to shoot them" 5
+		"threatening to waterboard them" 5
+		"using them as bait when you're boarding an enemy ship" 5
+		"working with them until they get better"
+		"giving them remedial training"
 	word
 		"."
 	word
@@ -5196,6 +5238,7 @@ phrase "friendly pirate"
 	word
 		"Anyone"
 		"Anyone here"
+		"Anybody"
 		"Any fellow pirates"
 		"Any fellow anarchists"
 	word
@@ -5237,6 +5280,7 @@ phrase "friendly pirate"
 		"non-pirates"
 		"maggots"
 		"worms"
+		"idiots"
 	word
 		" "
 	word
@@ -5374,6 +5418,7 @@ phrase "friendly author"
 		"joining the Endless Sky Community Discord."
 		"getting involved with the community."
 		"submitting new pull requests with improvements and ideas."
+		"joining the Endless Sky fan club today!
 
 
 phrase "friendly disabled"
@@ -5897,8 +5942,11 @@ phrase "hostile navy"
 
 phrase "hostile navy"
 	word
-		"You"
-		"Stop! You"
+		"You" 5
+		"Stop! You" 5
+		"Halt! You" 5
+		"Stop right there! You" 5
+		"Stop right there criminal scum! You"
 	word
 		" "
 	word
@@ -6483,6 +6531,7 @@ phrase "hostile pirate"
 		"most vicious"
 		"most ferocious"
 		"most dreaded"
+		"most feared"
 	word
 		" "
 	word
